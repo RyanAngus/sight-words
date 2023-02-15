@@ -4,8 +4,8 @@
 
 
 *, html, :root {
-  background-color: default;
-  color: black;
+  background-color: #242424;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   scroll-behavior: smooth;
@@ -139,6 +139,6 @@
   cursor: pointer;
 }
 
-.levelBtn:hover, :active {
+.levelBtn:hover, .levelBtn:active {
   opacity: 80%;
 }
