@@ -19,7 +19,6 @@ export default function App() {
   const MIN_COUNT = 0
 
   const [levelOne, setLevelOne] = useState(true)
-  // const [levelTwo, setLevelTwo] = useState(false)
   const [word, setWord] = useState(firstSightWords[0])
   const [count, setCount] = useState(MIN_COUNT)
   
@@ -30,6 +29,7 @@ export default function App() {
 //   let newWord = firstSightWords[count] 
 //   setWord(newWord)
 // }
+
 
 
 function prevWord() {
@@ -74,21 +74,21 @@ function levelTwoSelect() {
 
       <div className="buttonDiv">
 
-          <button className="pushable" id="prevWordBtn" onClick={prevWord}>
+          <button type="button" className="pushable" id="prevWordBtn" onClick={prevWord} return false>
             <span className="shadow"></span>
             <span className="edge"></span>
             <span className="front"> ← </span> 
           </button>
 
-        <button className="pushable" id="nextWordBtn" onClick={nextWord}>
-            <span className="shadow"></span>
-            <span className="edge"></span>
-            <span className="front"> → </span> 
-        </button>  
+          <button type="button" className="pushable" id="nextWordBtn" onClick={nextWord}>
+              <span className="shadow"></span>
+              <span className="edge"></span>
+              <span className="front"> → </span> 
+          </button>  
       </div>
       <div className="levelBtnDiv">
-        <button className="levelBtn" onClick={levelOneSelect}>Level 1 Words</button>
-        <button className="levelBtn" onClick={levelTwoSelect}>Level 2 Words</button>
+        <button type="button" className="levelBtn" onClick={levelOneSelect}>Level 1 Words</button>
+        <button type="button" className="levelBtn" onClick={levelTwoSelect}>Level 2 Words</button>
       </div>  
   </Box>
  
