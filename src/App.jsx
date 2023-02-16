@@ -61,12 +61,16 @@ function levelTwoSelect() {
 
   <Box className="app" mt="1em">
     
+    <div className="levelBtnDiv">
+        <button type="button" className="levelBtn" onClick={levelOneSelect}>Level 1 Words</button>
+        <button type="button" className="levelBtn" onClick={levelTwoSelect}>Level 2 Words</button>
+      </div>
 
     <FontAnimation />
 
+
     <CircularProgress value={count} size='100px' />
 
-    
 
       <div className="word" id="word">
         {word}
@@ -86,10 +90,7 @@ function levelTwoSelect() {
               <span className="front"> → </span> 
           </button>  
       </div>
-      <div className="levelBtnDiv">
-        <button type="button" className="levelBtn" onClick={levelOneSelect}>Level 1 Words</button>
-        <button type="button" className="levelBtn" onClick={levelTwoSelect}>Level 2 Words</button>
-      </div>  
+        
   </Box>
  
   )

@@ -3,7 +3,7 @@
 */
 
 
-*, html, :root {
+*, html {
   background-color: #242424;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -41,9 +41,6 @@
   display: flex;
   flex-direction: row;
 }
-
-
-/* BUTTON EXPERIMENT */
 
 .pushable {
   position: relative;
@@ -127,6 +124,12 @@
 }
 .pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+.levelBtnDiv {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
 }
 
 .levelBtn {
